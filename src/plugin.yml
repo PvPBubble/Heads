@@ -1,0 +1,15 @@
+name: Heads
+description: Custom heads plugin for iiEnderr
+version: 1.0-STABLE
+main: io.fazal.heads.Main
+authors: [Fazal]
+depend: [Essentials]
+softdepend: [PlaceholderAPI]
+api-version: 1.17
+commands:
+  tokens:
+    description: Main command for all token requests.
+  heads:
+    description: Acccess the head deposit menu.
+  tokenshop:
+    description: Access the token shop using this command.

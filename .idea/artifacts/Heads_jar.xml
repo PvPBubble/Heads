@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Heads:jar">
+    <output-path>$USER_HOME$/Documents/Clients/Ender</output-path>
+    <root id="archive" name="Heads.jar">
+      <element id="module-output" name="Heads" />
+    </root>
+  </artifact>
+</component>

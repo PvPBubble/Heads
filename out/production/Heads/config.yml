@@ -1,0 +1,270 @@
+Settings:
+  SaveTaskFrequency: 5
+Tokens:
+  Chances:
+    BLAZE: 100
+  Item:
+    Material: CLAY_BALL
+    Data: 0
+    Name: '&e&lTOKEN &7(Right-Click)'
+    Lore:
+      - '&7&oUse these tokens in /tokenshop!'
+Menus:
+  DepositMenu:
+    Title: "&7Head Shop"
+    Size: 27
+    Items:
+      Border:
+        Material: BLACK_STAINED_GLASS_PANE
+        Data: 7
+        Name: '&7'
+        Lore: []
+  TokenshopMenu:
+    Title: "&7Choose a Category"
+    Size: 9
+    Items:
+      Border:
+        Material: BLACK_STAINED_GLASS_PANE
+        Data: 0
+        Name: '&7'
+        Lore: []
+  CategoryMenu:
+    Title: "&7%category% ITEMS"
+    Items:
+      Border:
+        Material: BLACK_STAINED_GLASS_PANE
+        Data: 0
+        Name: '&7'
+        Lore: []
+Categories:
+  Basic:
+    Size: 9
+    Slot: 4
+    Item:
+      Material: BOOK
+      Data: 0
+      Name: '&eSimple Items'
+      Lore:
+        - ''
+    Items:
+      Potato:
+        Slot: 4
+        Price: 5
+        Commands:
+          - 'give %player% potato 1'
+        Item:
+          Material: DIAMOND
+          Data: 0
+          Name: '&bx1 Diamond'
+          Lore:
+            - '&7&oCost: 5 Tokens'
+Heads:
+  BlackBeard:
+    Mob: BLAZE
+    Chance: 10
+    Cost: 10
+    Slot: 26
+    DropItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: AmpedExport
+      Name: '&c&lBlack Beard''s Head'
+      Lore:
+        - '&7'
+        - '&6&l* &e&lTYPE &7BlackBeard'
+        - '&7'
+        - '&7&o"Use &7&o&n/heads&7&o to exchange this head for tokens."'
+    MenuItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: AmpedExport
+      Name: '&c&lBlack Beard''s Head &7(Click to Sell)'
+      Lore:
+        - ''
+        - ' &6&l* &e&lCOST &710 Heads'
+        - ' &6&l* &e&lGIVES &71 Token'
+        - ''
+  Zombie:
+    Mob: ZOMBIE
+    Chance: 10
+    Cost: 10
+    Slot: 0
+    DropItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Zombie
+      Name: '&2&lZombie Head'
+      Lore:
+        - '&7'
+        - '&6&l* &e&lTYPE &7Zombie'
+        - '&7'
+        - '&7&o"Use &7&o&n/heads&7&o to exchange this head for tokens."'
+    MenuItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Zombie
+      Name: '&2&lZombie Head &7(Click to Sell)'
+      Lore:
+        - ''
+        - ' &6&l* &e&lCOST &710 Heads'
+        - ' &6&l* &e&lGIVES &71 Token'
+        - ''
+  Skeleton:
+    Mob: SKELETON
+    Chance: 10
+    Cost: 10
+    Slot: 1
+    DropItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Skeleton
+      Name: '&f&lSkeleton Head'
+      Lore:
+        - '&7'
+        - '&6&l* &e&lTYPE &7Skeleton'
+        - '&7'
+        - '&7&o"Use &7&o&n/heads&7&o to exchange this head for tokens."'
+    MenuItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Skeleton
+      Name: '&f&lSkeleton Head &7(Click to Sell)'
+      Lore:
+        - ''
+        - ' &6&l* &e&lCOST &710 Heads'
+        - ' &6&l* &e&lGIVES &71 Token'
+        - ''
+  Spider:
+    Mob: SPIDER
+    Chance: 10
+    Cost: 10
+    Slot: 2
+    DropItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Spider
+      Name: '&8&lSpider Head'
+      Lore:
+        - '&7'
+        - '&6&l* &e&lTYPE &7Spider'
+        - '&7'
+        - '&7&o"Use &7&o&n/heads&7&o to exchange this head for tokens."'
+    MenuItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Spider
+      Name: '&8&lSpider Head &7(Click to Sell)'
+      Lore:
+        - ''
+        - ' &6&l* &e&lCOST &710 Heads'
+        - ' &6&l* &e&lGIVES &71 Token'
+        - ''
+  Blaze:
+    Mob: BLAZE
+    Chance: 10
+    Cost: 10
+    Slot: 3
+    DropItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Blaze
+      Name: '&6&lBlaze Head'
+      Lore:
+        - '&7'
+        - '&6&l* &e&lTYPE &7Blaze'
+        - '&7'
+        - '&7&o"Use &7&o&n/heads&7&o to exchange this head for tokens."'
+    MenuItem:
+      Material: PLAYER_HEAD
+      Data: 3
+      Owner: MHF_Blaze
+      Name: '&6&lBlaze Head &7(Click to Sell)'
+      Lore:
+        - ''
+        - ' &6&l* &e&lCOST &710 Heads'
+        - ' &6&l* &e&lGIVES &71 Token'
+        - ''
+Messages:
+  GAIN:
+    - '&a&l+ ⚙%amount% &2&lTOKENS'
+  LOSS:
+    - '&c&l- ⚙%amount% &4&lTOKENS'
+  NOT_ENOUGH_HEADS:
+    - '&c&l[!] &cYou do not have enough &4heads&c!'
+  NOT_ENOUGH_HEADS_COMMAND:
+    - '&c&l[!] &4%player%&c does not have enough heads!'
+  NOT_ENOUGH_TOKENS_TAKE:
+    - '&c&l[!] &4%player%&c does not have enough tokens!'
+  NOT_ENOUGH_TOKENS:
+    - '&c&l[!] &cYou do not have enough &4tokens&c!'
+  COMMAND_HELP_FORMAT: ' &6&l* &e%command%'
+  COMMAND_HELP:
+    - '&6&lHeads &fDisplaying Help'
+    - ''
+    - '%printcommands%'
+    - ''
+  NO_PERMISSION:
+    - '&c&l[!] &cYou do not have &4permission &cto execute this command.'
+  INVALID_CMD:
+    - '&c&l[!] &cYou have entered an &4invalid&c command.'
+  INVALID_USAGE:
+    - '&c&l[!] &cIncorrect Usage.'
+  INVALID_PLAYER:
+    - '&c&l[!] &cThat player is not online!'
+  INVALID_NUMBER:
+    - '&c&l[!] &cThat number is invalid!'
+  INVALID_HEAD:
+    - '&c&l[!] &cThat head is invalid!'
+  GAVE_TOKENS:
+    - '&e&l[!] &eYou gave &6x%tokens%&e tokens to &6%player%&e!'
+  RECEIVED_TOKENS: []
+  PAID_TOKENS:
+    - '&e&l[!] &eYou paid &6%player% x%tokens% &etokens!'
+  TAKE_TOKENS:
+    - '&e&l[!] &eYou took away &6x%tokens%&e tokens from &6%player%&e!'
+  RECEIVED_PAY_TOKENS:
+    - '&e&l[!] &eYou received &6x%tokens% &efrom &6%player%&e!'
+  VIEW_TOKENS:
+    - '&e&l[!] &6%player% &ehas &6x%tokens% tokens&e!'
+  VIEW_TOKENS_SELF:
+    - '&e&l[!] &eYou have &6%tokens% &etokens!'
+  PURCHASE_SUCCESS:
+    - '&e&l[!] &eYou purchased &6%item% &efor &6x%tokens% Tokens&e!'
+  TOKEN_CLAIM:
+    - '&e&l[!] &eYou claimed &6%tokens%&e tokens!'
+Sounds:
+  TOKEN_CLAIM:
+    Sound: LEVEL_UP
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  GAIN:
+    Sound: LEVEL_UP
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  LOSS:
+    Sound: CHICKEN_EGG_POP
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  NOT_ENOUGH_HEADS:
+    Sound: ANVIL_LAND
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  NOT_ENOUGH_TOKENS:
+    Sound: ANVIL_LAND
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  PURCHASE_SUCCESS:
+    Sound: BAT_TAKEOFF
+    Enabled: true
+    Volume: 1
+    Pitch: 1
+  CLOSE_CATEGORY:
+    Sound: CHICKEN_EGG_POP
+    Enabled: true
+    Volume: 1
+    Pitch: 1
